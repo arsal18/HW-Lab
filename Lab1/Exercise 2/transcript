@@ -1,0 +1,37 @@
+# Compile of fulladder.vhd was successful.
+# Compile of fulladder_tb.vhd failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of fulladder_tb.vhd was successful.
+vsim -gui work.fulladder work.fulladder_tb
+# vsim -gui work.fulladder work.fulladder_tb 
+# Start time: 18:58:07 on May 23,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.fulladder(behavioral)
+# Loading work.fulladder_tb(behavioral)
+# ** Warning: (vsim-3473) Component instance "HA1 : halfadder" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /fulladder File: C:/Users/neues konto/Desktop/lab1ex2/fulladder.vhd
+# ** Warning: (vsim-3473) Component instance "HA2 : halfadder" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /fulladder File: C:/Users/neues konto/Desktop/lab1ex2/fulladder.vhd
+# ** Warning: (vsim-3473) Component instance "HA1 : halfadder" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /fulladder_tb/FA File: C:/Users/neues konto/Desktop/lab1ex2/fulladder.vhd
+# ** Warning: (vsim-3473) Component instance "HA2 : halfadder" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /fulladder_tb/FA File: C:/Users/neues konto/Desktop/lab1ex2/fulladder.vhd
+# ** Warning: (vsim-8684) No drivers exist on out port /fulladder_tb/FA/Sum, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /fulladder_tb/Sum_tb.
+add wave -position insertpoint  \
+sim:/fulladder/A
+add wave -position insertpoint  \
+sim:/fulladder/B
+add wave -position insertpoint  \
+sim:/fulladder/Cin
+add wave -position insertpoint  \
+sim:/fulladder/Sum
+add wave -position insertpoint  \
+sim:/fulladder/Cout
+force -freeze sim:/fulladder/B 1 0
+force -freeze sim:/fulladder/A 0 0
+force -freeze sim:/fulladder/Cin 1 0
+run
