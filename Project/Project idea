@@ -1,0 +1,3 @@
+The topic that we have decided for our lab project is Alarm clock. The block diagram is attached below:
+We will use ModelSim in VHDL to implement alarm clock. The PCB design will be concluded using Xilinx Vivado. 
+
