@@ -3,9 +3,9 @@ This reporsitory contains the lab work and the project of module Hardware Engine
 
 Group Members:  
 
-Arsal Abbasi  
+- Arsal Abbasi  
 
-Ahmed Helmy  
+- Ahmed Helmy  
 
-Jires Donfack Voufo  
+- Jires Donfack Voufo  
 
